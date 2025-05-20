@@ -1,18 +1,16 @@
-# Fichiers système
+# Fichiers système (Mac & Windows)
 .DS_Store
 Thumbs.db
 
-# Node/npm (si jamais utilisé)
-node_modules/
-package-lock.json
-
-# Netlify build folder (si jamais tu build un site statique)
-dist/
-build/
-
-# VS Code
+# Éditeur (Visual Studio Code)
 .vscode/
 
-# Fichiers perso
+# Logs éventuels
 *.log
+
+# Fichiers perso ou sensibles
 *.env
+
+# Dossiers de build éventuels (si tu ajoutes plus tard un bundler)
+dist/
+build/
