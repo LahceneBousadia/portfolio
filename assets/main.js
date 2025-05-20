@@ -96,3 +96,20 @@ const skillsSection = document.getElementById("skills");
 if (skillsSection) {
   observer.observe(skillsSection);
 }
+
+// Fade-in on scroll
+const fadeIns = document.querySelectorAll(".fade-in");
+
+const fadeObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+fadeIns.forEach((el) => fadeObserver.observe(el));
