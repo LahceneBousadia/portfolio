@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body class="font-sans bg-gray-50 text-gray-800">
@@ -116,7 +117,8 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg text-white fade-in"
+      class="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg text-white"
+      data-aos="fade-up"
     >
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row items-center">
@@ -166,7 +168,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white fade-in">
+    <section id="about" class="py-16 bg-white" data-aos="fade-right">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
           À propos
@@ -267,7 +269,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-50 fade-in">
+    <section id="projects" class="py-16 bg-gray-50" data-aos="fade-up">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
           Mes projets
@@ -414,7 +416,8 @@
       </div>
     </section>
 
-    <section id="experience" class="py-16 bg-white fade-in">
+    <!-- Experiences Section -->
+    <section id="experience" class="py-16 bg-white" data-aos="fade-left">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
           Expérience professionnelle
@@ -507,7 +510,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-gray-50 fade-in">
+    <section id="skills" class="py-16 bg-gray-50" data-aos="fade-up">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
           Mes compétences
@@ -691,7 +694,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-white fade-in">
+    <section id="contact" class="py-16 bg-white" data-aos="fade-up">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
           Contactez-moi
@@ -897,5 +900,12 @@
       <i class="fas fa-arrow-up"></i>
     </button>
     <script src="assets/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Durée de l'animation en ms
+        once: true, // Ne joue l’animation qu’une fois
+      });
+    </script>
   </body>
 </html>
