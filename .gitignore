@@ -1,0 +1,18 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Node/npm (si jamais utilisé)
+node_modules/
+package-lock.json
+
+# Netlify build folder (si jamais tu build un site statique)
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# Fichiers perso
+*.log
+*.env
