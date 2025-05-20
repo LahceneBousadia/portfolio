@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="icon" href="assets/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lahcene BOUSADIA - Chef de projet IT & Data Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Custom CSS */
+      .gradient-bg {
+        background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      }
+      .skill-bar {
+        transition: width 1.5s ease-in-out;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .nav-link {
+        position: relative;
+      }
+      .nav-link:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #3b82f6;
+        transition: width 0.3s ease;
+      }
+      .nav-link:hover:after {
+        width: 100%;
+      }
+      .active:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0 flex items-center">
+            <span class="text-xl font-bold text-blue-600">LB</span>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a
+                href="#home"
+                class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                >Accueil</a
+              >
+              <a
+                href="#about"
+                class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                >À propos</a
+              >
+              <a
+                href="#projects"
+                class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                >Projets</a
+              >
+              <a
+                href="#experience"
+                class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                >Expérience</a
+              >
+              <a
+                href="#skills"
+                class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                >Compétences</a
+              >
+              <a
+                href="#contact"
+                class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-500 hover:text-blue-600 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#home"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            >Accueil</a
+          >
+          <a
+            href="#about"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            >À propos</a
+          >
+          <a
+            href="#projects"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            >Projets</a
+          >
+          <a
+            href="#experience"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            >Expérience</a
+          >
+          <a
+            href="#skills"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            >Compétences</a
+          >
+          <a
+            href="#contact"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg text-white"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+              Lahcene BOUSADIA
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-blue-200">
+              Chef de projet IT & Data Analyst
+            </h2>
+            <p class="text-lg md:text-xl mb-6 text-blue-100">
+              "Optimiser les systèmes d'information pour une performance accrue"
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#contact"
+                class="bg-white text-blue-600 px-6 py-2 rounded-md font-medium hover:bg-blue-50 transition duration-300"
+                >Me contacter</a
+              >
+              <a
+                href="#projects"
+                class="border border-white text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 transition duration-300"
+                >Mes projets</a
+              >
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div
+              class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl"
+            >
+            <img
+            src="assets/photo.png"
+            alt="Photo de profil"
+            class="w-full h-full object-cover"
+          />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          À propos
+        </h2>
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 text-justify">
+            <h3 class="text-2xl font-semibold mb-4 text-blue-600">
+              Mon parcours
+            </h3>
+
+            <p class="text-gray-600 mb-4">
+              Diplômé d’un Master 2 MIAGE – Innovation et Transformation
+              Numérique de l’Entreprise (INTENSE) à l’Université Côte d’Azur,
+              j’ai commencé mon parcours par une licence en informatique à
+              l’Université de Caen Normandie.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Depuis quatre ans, je me spécialise dans la gestion de projet et
+              la transition numérique. J’ai acquis des compétences solides en
+              développement web, sécurité informatique, réseaux, et surtout en
+              pilotage de projets orientés métier.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Mon alternance chez Dopamine Formation, en tant qu’assistant chef
+              de projet, m’a permis d’appliquer ces compétences dans un
+              environnement professionnel dynamique.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Aujourd’hui, en tant que chef de projet transition numérique au
+              SDIS 06, je pilote la migration vers Microsoft 365 et d’autres
+              projets de modernisation des systèmes d’information. J’interviens
+              à la fois sur l’aspect technique et organisationnel pour optimiser
+              les processus internes.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Prêt à contribuer à des projets ambitieux en pilotant efficacement
+              la transition numérique.
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold mb-4 text-blue-600">
+              Domaines d'expertise
+            </h3>
+            <div class="space-y-4 text-justify">
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-2">
+                  Gestion de projets IT
+                </h4>
+                <p class="text-gray-600">
+                  Pilotage de projets digitaux de bout en bout, avec
+                  coordination des équipes, respect des délais et adaptation aux
+                  besoins métiers.
+                </p>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-2">
+                  Automatisation des processus
+                </h4>
+                <p class="text-gray-600">
+                  Déploiement de solutions (Power Automate, Power Apps) pour
+                  automatiser les tâches récurrentes et optimiser les flux de
+                  travail.
+                </p>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-2">
+                  Migration de données
+                </h4>
+                <p class="text-gray-600">
+                  Planification et exécution de migrations sécurisées entre
+                  outils métiers (GMAO, RH, finance), en assurant intégrité et
+                  traçabilité avec un ETL.
+                </p>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-2">
+                  Transition numérique
+                </h4>
+                <p class="text-gray-600">
+                  Accompagnement des agents et services dans l’adoption d’outils
+                  collaboratifs (Microsoft 365, Teams, SharePoint).
+                </p>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-2">
+                  Communication & conduite du changement
+                </h4>
+                <p class="text-gray-600">
+                  Animation de formations, rédaction de supports et
+                  spécifications, gestion des parties prenantes pour favoriser
+                  l’adhésion aux projets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Mes projets
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Projet 1 : GMAO ISILOG -->
+          <div
+            class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <div class="h-48 bg-blue-100 flex items-center justify-center">
+              <i class="fas fa-tools text-6xl text-blue-500"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-gray-800">
+                Déploiement de la GMAO ISILOG
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Gestion technique du projet : analyse des besoins, conception
+                ETL, reprise de données Oracle/SQL Server, formation des
+                utilisateurs et rédaction des supports.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Oracle</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >SQL Server</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >ETL</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Gestion de projet</span
+                >
+              </div>
+              <a href="#" class="text-blue-600 font-medium hover:underline"
+                >Voir les détails →</a
+              >
+            </div>
+          </div>
+
+          <!-- Projet 2 : Microsoft 365 -->
+          <div
+            class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <div class="h-48 bg-green-100 flex items-center justify-center">
+              <i class="fas fa-network-wired text-6xl text-green-500"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-gray-800">
+                Transition vers Microsoft 365
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Structuration des équipes Teams, formations, guides
+                utilisateurs, et déploiement de SharePoint, Planner et Power
+                Platform pour améliorer la collaboration.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full"
+                  >Teams</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full"
+                  >SharePoint</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full"
+                  >Power Automate</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full"
+                  >Formation</span
+                >
+              </div>
+              <a href="#" class="text-green-600 font-medium hover:underline"
+                >Voir les détails →</a
+              >
+            </div>
+          </div>
+
+          <!-- Projet 3 : Généalogie Web -->
+          <div
+            class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <i class="fas fa-sitemap text-6xl text-purple-500"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-gray-800">
+                Plateforme web de généalogie
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Application d'analyse et de visualisation de généalogies via
+                fichiers GEDCOM, avec cartes, vues circulaires, alertes et
+                comparaisons croisées.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full"
+                  >Full-stack</span
+                >
+                <span
+                  class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full"
+                  >GEDCOM</span
+                >
+                <span
+                  class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full"
+                  >Visualisation</span
+                >
+              </div>
+              <a href="#" class="text-purple-600 font-medium hover:underline"
+                >Voir les détails →</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <a
+            href="projets.html"
+            class="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-600 rounded-md font-medium hover:bg-blue-50 transition duration-300"
+          >
+            Voir tous mes projets
+            <svg
+              class="ml-2 w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Expérience professionnelle
+        </h2>
+
+        <div class="relative">
+          <div
+            class="border-l-2 border-blue-200 absolute h-full top-0 left-4 md:left-1/2"
+          ></div>
+
+          <!-- SDIS 06 -->
+          <div class="mb-8 flex justify-between items-center w-full">
+            <div class="order-1 w-5/12"></div>
+            <div
+              class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full"
+            >
+              <h1 class="mx-auto text-white font-semibold text-lg">1</h1>
+            </div>
+            <div
+              class="order-1 bg-blue-50 rounded-lg shadow-lg w-5/12 px-6 py-4"
+            >
+              <h3 class="text-xl font-bold text-gray-800">
+                Chef de projet IT transition numérique
+              </h3>
+              <h4 class="text-lg font-semibold text-blue-600">
+                SDIS 06 | Depuis oct. 2023
+              </h4>
+              <ul class="list-disc pl-5 mt-2 text-gray-600">
+                <li>Pilotage de projets numériques (M365, GMAO)</li>
+                <li>Déploiement & gouvernance Microsoft 365</li>
+                <li>Référent technique ETL (Oracle, SQL Server)</li>
+                <li>Formation, doc utilisateurs, conduite du changement</li>
+                <li>Chiffrage, planning, tests, recettes</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Dopamine Formation -->
+          <div class="mb-8 flex justify-between items-center w-full">
+            <div
+              class="order-1 bg-gray-100 rounded-lg shadow-lg w-5/12 px-6 py-4"
+            >
+              <h3 class="text-xl font-bold text-gray-800">
+                Assistant chef de projet
+              </h3>
+              <h4 class="text-lg font-semibold text-blue-600">
+                Dopamine Formation | Fév. 2022 - Sept. 2023
+              </h4>
+              <ul class="list-disc pl-5 mt-2 text-gray-600">
+                <li>Suivi projets : planning, budget, livrables</li>
+                <li>Relation prestataires</li>
+                <li>Participation à la recette</li>
+                <li>Documentation SI et supervision</li>
+              </ul>
+            </div>
+            <div
+              class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full"
+            >
+              <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+            </div>
+            <div class="order-1 w-5/12"></div>
+          </div>
+
+          <!-- Le Jardin des Matières -->
+          <div class="mb-8 flex justify-between items-center w-full">
+            <div class="order-1 w-5/12"></div>
+            <div
+              class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full"
+            >
+              <h1 class="mx-auto text-white font-semibold text-lg">3</h1>
+            </div>
+            <div
+              class="order-1 bg-blue-50 rounded-lg shadow-lg w-5/12 px-6 py-4"
+            >
+              <h3 class="text-xl font-bold text-gray-800">
+                Stagiaire en développement web
+              </h3>
+              <h4 class="text-lg font-semibold text-blue-600">
+                Le Jardin des Matières | Avr. - Mai 2021
+              </h4>
+              <ul class="list-disc pl-5 mt-2 text-gray-600">
+                <li>Plateforme de gestion de stock</li>
+                <li>Création clients/fournisseurs, devis PDF</li>
+                <li>PHP, MySQL, HTML, JS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Mes compétences
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Technical Skills -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-6 text-gray-800 border-b pb-2">
+              Techniques
+            </h3>
+            <div class="space-y-5">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700">SQL</span>
+                  <span class="text-sm font-medium text-gray-700">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-blue-600 h-2.5 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700"
+                    >Power Platform</span
+                  >
+                  <span class="text-sm font-medium text-gray-700">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-blue-600 h-2.5 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700"
+                    >Power Apps</span
+                  >
+                  <span class="text-sm font-medium text-gray-700">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-blue-600 h-2.5 rounded-full"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700">ETL</span>
+                  <span class="text-sm font-medium text-gray-700">75%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-blue-600 h-2.5 rounded-full"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Skills -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-6 text-gray-800 border-b pb-2">
+              Professionnelles
+            </h3>
+            <div class="space-y-5">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700"
+                    >Gestion de projet</span
+                  >
+                  <span class="text-sm font-medium text-gray-700">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-blue-600 h-2.5 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700"
+                    >Analyse des besoins</span
+                  >
+                  <span class="text-sm font-medium text-gray-700">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-blue-600 h-2.5 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700"
+                    >Migration de données</span
+                  >
+                  <span class="text-sm font-medium text-gray-700">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-blue-600 h-2.5 rounded-full"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm font-medium text-gray-700"
+                    >Coordination d'équipe</span
+                  >
+                  <span class="text-sm font-medium text-gray-700">75%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-blue-600 h-2.5 rounded-full"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-6 text-gray-800 border-b pb-2">
+            Outils maîtrisés
+          </h3>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
+          >
+            <div
+              class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition"
+            >
+              <i class="fas fa-database text-4xl text-blue-500 mb-2"></i>
+              <span class="text-sm font-medium">SQL Server, Oracle</span>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition"
+            >
+              <i class="fas fa-bolt text-4xl text-green-500 mb-2"></i>
+              <span class="text-sm font-medium">Power Automate</span>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition"
+            >
+              <i class="fas fa-mobile-alt text-4xl text-purple-500 mb-2"></i>
+              <span class="text-sm font-medium">Power Apps</span>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition"
+            >
+              <i class="fas fa-chart-bar text-4xl text-yellow-500 mb-2"></i>
+              <span class="text-sm font-medium">Power BI</span>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition"
+            >
+              <i class="fab fa-microsoft text-4xl text-blue-400 mb-2"></i>
+              <span class="text-sm font-medium">Azure</span>
+            </div>
+            <div
+              class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition"
+            >
+              <i class="fas fa-project-diagram text-4xl text-red-500 mb-2"></i>
+              <span class="text-sm font-medium">Jira</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Contactez-moi
+        </h2>
+
+        <div class="flex flex-col md:flex-row gap-8">
+          <div class="md:w-1/2">
+            <form
+              action="https://formsubmit.co/lahcene.bousadia@gmail.com"
+              method="POST"
+              class="space-y-6"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://ton-site.com/merci.html"
+              />
+
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700"
+                  >Nom complet</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="subject"
+                  class="block text-sm font-medium text-gray-700"
+                  >Sujet</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                ></textarea>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  class="w-full flex justify-center py-2 px-4 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700"
+                >
+                  Envoyer le message
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="bg-gray-50 p-6 rounded-lg h-full">
+              <h3 class="text-xl font-bold mb-4 text-gray-800">Coordonnées</h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-envelope text-blue-500 mt-1"></i>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm font-medium text-gray-500">
+                      Email professionnel
+                    </p>
+                    <p class="text-sm text-blue-600">
+                      lahcene.bousadia@gmail.com
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-phone-alt text-blue-500 mt-1"></i>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm font-medium text-gray-500">Téléphone</p>
+                    <p class="text-sm text-gray-600">+33 6 60 95 79 80</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-map-marker-alt text-blue-500 mt-1"></i>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm font-medium text-gray-500">
+                      Localisation
+                    </p>
+                    <p class="text-sm text-gray-600">Nice, France</p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold mt-8 mb-4 text-gray-800">
+                Réseaux professionnels
+              </h3>
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.linkedin.com/in/lahcene-bousadia/"
+                  class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition"
+                >
+                  <i class="fab fa-linkedin-in text-lg"></i>
+                </a>
+                <a
+                  href="https://github.com/LahceneBousadia"
+                  class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-blue-600 hover:bg-gray-200 transition"
+                >
+                  <i class="fab fa-github text-lg"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/hsinouvibes"
+                  class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition"
+                >
+                  <i class="fab fa-instagram text-lg"></i>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@hsinou_vibes"
+                  class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition"
+                >
+                  <i class="fab fa-tiktok text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <span class="text-xl font-bold">Lahcene BOUSADIA</span>
+            <p class="text-gray-400 mt-1">Chef de projet IT & Data Analyst</p>
+          </div>
+          <div class="flex space-x-6">
+            <a href="#home" class="text-gray-400 hover:text-white transition"
+              >Accueil</a
+            >
+            <a href="#about" class="text-gray-400 hover:text-white transition"
+              >À propos</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-400 hover:text-white transition"
+              >Projets</a
+            >
+            <a href="#contact" class="text-gray-400 hover:text-white transition"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <div
+          class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm"
+        >
+          <p>© 2025 Lahcene BOUSADIA. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button
+      id="back-to-top"
+      class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("menu-btn")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById("mobile-menu");
+            if (!mobileMenu.classList.contains("hidden")) {
+              mobileMenu.classList.add("hidden");
+            }
+          }
+        });
+      });
+
+      // Highlight active navigation link
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - 100) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+
+        // Show/hide back to top button
+        const backToTopButton = document.getElementById("back-to-top");
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove("opacity-0", "invisible");
+          backToTopButton.classList.add("opacity-100", "visible");
+        } else {
+          backToTopButton.classList.remove("opacity-100", "visible");
+          backToTopButton.classList.add("opacity-0", "invisible");
+        }
+      });
+
+      // Back to top button
+      document
+        .getElementById("back-to-top")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+      // Animate skill bars on scroll
+      function animateSkillBars() {
+        const skillBars = document.querySelectorAll(".skill-bar");
+        skillBars.forEach((bar) => {
+          const width = bar.style.width;
+          bar.style.width = "0";
+          setTimeout(() => {
+            bar.style.width = width;
+          }, 100);
+        });
+      }
+
+      // Intersection Observer for skill bars animation
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateSkillBars();
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      const skillsSection = document.getElementById("skills");
+      if (skillsSection) {
+        observer.observe(skillsSection);
+      }
+    </script>
+  </body>
+</html>
