@@ -82,4 +82,31 @@
   h2 {
     font-size: 1.25rem; /* text-xl */
   }
+
+  /* ✅ Spécifique à la timeline expérience */
+  #experience .flex.justify-between.items-center {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #experience .order-1.w-5\/12 {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #experience .z-20.flex.items-center {
+    margin: 1rem 0;
+    left: 0 !important;
+    position: relative;
+  }
+
+  #experience .border-l-2.border-blue-200.absolute {
+    left: 1.25rem !important; /* ~20px */
+  }
+
+  #experience .bg-blue-50,
+  #experience .bg-gray-100 {
+    width: 100% !important;
+  }
 }
