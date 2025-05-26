@@ -1,4 +1,4 @@
-/* assets/styles.css */
+/* ✅ CORRIGÉ : assets/styles.css */
 
 .gradient-bg {
   background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
@@ -20,6 +20,7 @@
 .nav-link {
   position: relative;
 }
+
 .nav-link:after {
   content: "";
   position: absolute;
@@ -30,6 +31,7 @@
   background-color: #3b82f6;
   transition: width 0.3s ease;
 }
+
 .nav-link:hover:after,
 .nav-link.active:after {
   width: 100%;
@@ -41,22 +43,23 @@
   transform: translateY(20px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* 🔄 Mobile optimizations */
+/* ✅ Ajouts pour corriger la timeline sur mobile */
 @media (max-width: 768px) {
   .button {
-    font-size: 0.875rem; /* text-sm */
-    padding: 0.5rem 1rem; /* py-2 px-4 */
-    border-radius: 0.5rem; /* rounded-lg */
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
   }
 
   section {
-    padding-top: 2.5rem; /* pt-10 */
-    padding-bottom: 2.5rem; /* pb-10 */
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .button-group {
@@ -66,7 +69,7 @@
   }
 
   .text-3xl {
-    font-size: 1.75rem; /* Réduire les gros titres */
+    font-size: 1.75rem;
   }
 
   .photo-container {
@@ -76,17 +79,16 @@
   }
 
   h1 {
-    font-size: 1.75rem; /* text-2xl -> text-3xl */
+    font-size: 1.75rem;
   }
 
   h2 {
-    font-size: 1.25rem; /* text-xl */
+    font-size: 1.25rem;
   }
 
-  /* ✅ Spécifique à la timeline expérience */
   #experience .flex.justify-between.items-center {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column !important;
+    align-items: flex-start !important;
   }
 
   #experience .order-1.w-5\/12 {
@@ -96,13 +98,13 @@
   }
 
   #experience .z-20.flex.items-center {
-    margin: 1rem 0;
+    margin: 1rem 0 !important;
+    position: relative !important;
     left: 0 !important;
-    position: relative;
   }
 
   #experience .border-l-2.border-blue-200.absolute {
-    left: 1.25rem !important; /* ~20px */
+    left: 1.5rem !important;
   }
 
   #experience .bg-blue-50,
